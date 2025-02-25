@@ -12,3 +12,6 @@ setInterval(() => { // pravidelně vyvolává událost
   console.log("Ukázkovný projekt pro robůtka"); // vypíše text: Ukázkovný projekt pro robůtka
 }, 1000); // čas opakování se udává v milisekundách (1000 ms je 1 sekunda)
 
+gpio.on("falling", Pins.ButtonLeft, () => { // pokud se stiskne tlačítko na levé straně robůtka
+  console.log("Stisknuto tlačítko na levé straně"); // vypíše text: Stisknuto tlačítko na levé straně robůtka
+});
